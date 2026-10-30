@@ -2,7 +2,7 @@ Microsoft Entra ID – Identity and Access Management (IAM) Lab
 
 **Project Overview**
 
-This project is a hands-on Identity and Access Management (IAM) lab built using Microsoft Entra ID. It explores how organizations manage digital identities, user permissions, security groups, administrative access, and application access.
+This project is a hands-on Identity and Access Management (IAM) lab built using Microsoft Entra ID. It explores how organizations manage digital identities, user permissions, security groups, and administrative access.
 
 The primary objective is to implement and demonstrate core IAM principles, including Role-Based Access Control (RBAC), least privilege, delegated administration, and employee lifecycle management.
 
@@ -22,7 +22,7 @@ Establish organizational reporting relationships.
 
 Simulate employee offboarding and account deactivation.
 
-Explore enterprise application integration and group-based access design.
+Explore enterprise application integration and application-specific access design.
 
 **Technologies Used**
 
@@ -46,13 +46,7 @@ Created and configured user accounts representing common organizational departme
 
 Created department-based security groups to organize users according to their organizational responsibilities.
 
-Also created specialized groups, including:
-
-Payroll Access
-
-SOC Analysts
-
-These groups demonstrate how access can be organized around specific job responsibilities rather than relying exclusively on department membership.
+These groups demonstrate how users can be organized according to their department and job functions.
 
 3. Role-Based Access Control (RBAC)
 
@@ -88,7 +82,9 @@ Simulated employee offboarding by disabling an employee account and exploring ap
 
 Created enterprise application entries to explore application integration and access management concepts.
 
-Designed application-specific security groups to represent resource-specific access requirements:
+Developed a proposed application-specific access model to demonstrate how organizations can assign access according to job responsibilities.
+
+Proposed application-specific security groups:
 
 Payroll Portal — APP-Payroll-Users
 
@@ -100,21 +96,17 @@ CRM — APP-CRM-Users
 
 IT Ticketing Platform — APP-IT-Ticketing-Users
 
-Each group is designed to contain only users whose job responsibilities require access to the corresponding application.
-
-This approach separates organizational membership from application access and demonstrates more granular access-control design.
+These groups represent a proposed access-control design and were not created or assigned within the Entra environment.
 
 **Licensing and Implementation Limitations**
 
 This project uses Microsoft Entra ID Free. Certain advanced capabilities, including group-based assignment to enterprise applications, require additional licensing.
 
-Specialized security groups were created to demonstrate access-control design; however, group-based enterprise application assignment and enforcement were not implemented due to licensing limitations.
+Enterprise application entries were created to explore application integration and access management. However, group-based enterprise application assignment and enforcement were not implemented due to licensing limitations.
 
-Application-specific groups represent a proposed access model rather than verified application-level enforcement.
+The application-specific security groups described in this project represent a proposed access model rather than implemented configurations.
 
 **Learning Outcomes**
-
-Through this project, I explored:
 
 Identity and Access Management fundamentals
 
@@ -132,9 +124,9 @@ Organizational hierarchy management
 
 Employee onboarding and offboarding concepts
 
-Enterprise application integration and access design
+Enterprise application integration
 
-Application-specific security group planning
+Application-specific access-control design
 
 **Future Improvements**
 
